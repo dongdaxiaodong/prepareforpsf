@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+</head>
+<body>
+<div id="first" hidden="hidden">first</div>
+<div id="second">second</div>
+<script>
+    // var second=document.getElementById("second")
+    // second.onclick=function(){
+    //     var first=document.getElementById("first")
+    //     if(first.hidden){
+    //         first.hidden=null
+    //     }
+    //     else{
+    //         first.hidden=true
+    //     }
+    //     var alldiv=document.getElementsByTagName("div")
+    //     for(var i=0;i<alldiv.length;i+=1){
+    //         if(alldiv[i].hidden){
+    //             console.log("yes")
+    //         }
+    //     }
+    //     console.log(alldiv.length)
+    // }
+    var seconddiv=document.getElementById("second")
+    var p=[{x:"colin",y:5},{x:"andy",y:3},{x:"rachel",y:6}]
+    function sortbyy(a,b){
+        return a.y-b.y
+    }
+    p.sort(sortbyy)
+    seconddiv.onclick=function(){
+        alert(p[0].y)
+    }
+    </script>
+</body>
+</html>

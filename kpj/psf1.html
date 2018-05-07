@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>psf</title>
+    <style>
+        #left-div{
+            float: left;
+            border: 1px solid black;
+            width: 600px;
+            margin-left: 5%;
+        }
+        #right-div{
+            float:right;
+            border: 1px solid black;
+            width:300px;
+        }
+        body{
+            background-color:#d2b48c
+        }
+        .roundbutton{
+            background-color:#4b3f39;
+            font-family: 'Open Sans', sans-serif;
+            font-size:30px;
+            text-decoration:none;
+            color:#fff;
+            position:relative;
+            padding:5px 10px;
+            padding-right:20px;
+            background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+            box-shadow: inset 0px 1px 0px #9e8d84, 0px 5px 0px 0px #322620, 0px 10px 5px #999;
+            border:solid 10px #4d4e53;
+            border-radius:20px 20px 20px 20px;
+            margin: 6px 10px;
+        }
+        .nextbutton{
+            background-color:#4b3f39;
+            font-family: 'Open Sans', sans-serif;
+            font-size:30px;
+            text-decoration:none;
+            color:#fff;
+            position:relative;
+            padding:10px 20px;
+            padding-right:50px;
+            background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+            box-shadow: inset 0px 1px 0px #9e8d84, 0px 5px 0px 0px #322620, 0px 10px 5px #999;
+            border:solid 10px #4d4e53;
+            border-radius:20px 20px 20px 20px;
+            margin: 6px 10px;
+        }
+        .div-label{
+            font-family: KaiTi;
+            font-weight: bolder;
+            font-size:34px;
+        }
+        #round2_question{
+            font-family: KaiTi;
+            font-weight: bolder;
+            font-size:50px;
+        }
+        #round3_question{
+            font-family: KaiTi;
+            font-weight: bolder;
+            font-size:50px;
+        }
+        #team-label{
+            font-family: KaiTi;
+            font-weight: bolder;
+            font-size:34px;
+        }
+        .teamname{
+            font-family: KaiTi;
+            font-weight: bolder;
+            font-size:34px;
+        }
+        .teamscore{
+            font-family: KaiTi;
+            font-weight: bolder;
+            font-size:34px;
+        }
+        #camptionlabel{
+            margin-left: 5%;
+            margin-top: 20%;
+            font-family: "Bell MT";
+            font-weight: bolder;
+            color: #761c19;
+            font-size:80px;
+        }
+        </style>
+</head>
+<body>
+<label id="camptionlabel" hidden="hidden"></label>
+<div id="left-div" >
+
+    <div id="leftreplace-div">
+    <button id="bu-round1" class="roundbutton">1-科普大全</button>
+    <button id="bu-round2" class="roundbutton">2-科普news</button>
+    <button id="bu-round3" class="roundbutton">3-计算机科普</button><br>
+    <div id="div-round1" hidden="hidden"  class="div-label">
+        <label id="round1_show"></label><br>
+        <p id="round1_1" class="round1_p"></p>
+        <p id="round1_2" class="round1_p"></p>
+        <p id="round1_3" class="round1_p"></p>
+        <p id="round1_4" class="round1_p"></p>
+        <p id="round1_5" class="round1_p"></p>
+        <button id="round1_next" class="nextbutton">next team</button>
+    </div>
+    <div id="div-round2" hidden="hidden">
+        <label id="round2_numshow" class="div-label" ></label><br>
+        <p id="round2_question"></p>
+        <button id="round2_next" class="nextbutton">next question</button>
+    </div>
+    <div id="div-round3" hidden="hidden">
+        <label id="round3_numshow" class="div-label"></label><br>
+        <p id="round3_question"></p>
+        <button id="round3_next" class="nextbutton">next question</button>
+    </div>
+
+    </div>
+
+</div>
+<div id="right-div">
+    <label id="team-label">team and score</label>
+    <br>
+    <label class="teamname" id="name1"></label>  <label class="teamscore" id="the1">0</label><br>
+    <label class="teamname"></label>  <label class="teamscore">0</label><br>
+    <label class="teamname"></label>  <label class="teamscore">0</label><br>
+    <label class="teamname"></label>  <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+    <label class="teamname"></label> <label class="teamscore">0</label><br>
+</div>
+<script>
+    //todo--将round1 round2 round3 的隐藏机制完善
+    var round1_index=0
+    var round2_index=0
+    var round3_index=0
+    grouplist=['程艺','我写的代码什么都队','我答的全都队','龙哈哈队','水晶之恋','无名队','十二队','组什么队','我说得','哈哈哈哈哈','全都队','嘻嘻',
+    '烤鱼','红鲤鱼与绿鲤鱼与驴','没什么知识队','我们都队','哥帅个三','优友','反正也是一轮游什么名','三只花','HYDRA','陆家F3','咱们仨','不会敲代码的程序员',
+    '答啥都对队','软日最棒','我们说啥都','重在参与','勇往直前','不充QB对不对','快乐一家人','我说的队','没什么创意队','要法式亲亲队',
+    '临时拉了两个人','要天罗地网亲亲','皮这一下很开心']
+    round1list=[{q1:'什么是青春痘？',q2:'山体滑坡的诱因有哪些？',q3:'乙型肝炎的主要传播途径有哪些？',q4:'我国专利法所保护的专利有哪三种？',q5:'科学发展观的基本内涵是什么？'},
+        {q1:'月亮老是一面朝着地球的原因是什么？',q2:'我国人均能源占有量约是世界人均值的多少？',q3:'世界上第一个两次获得诺贝尔奖的科学家是谁？',q4:'目前个人住房贷款的最长贷款期限为多少年',q5:'我国最大的淡水湖是哪个湖'},
+        {q1:'请问煤气是煤变成的吗？它是怎样产生的？',q2:'世界上栽培最早的植物是什么？',q3:'为什么有的人睡觉会流口水？',q4:'地震发生的主要原因是什么？',q5:'在我国神话传说中上古时代谁带领人们成功治理了洪水？'},
+        {q1:'科技活动周是我国哪年开始设立并组织实施的？',q2:'干冰是由什么物质凝结而成？',q3:'2008年5月12日在四川汶川等地发生里氏震级几级地震？',q4:'请问生物进化论的创始人是谁？',q5:'“打蛇打七寸”的七寸是指蛇的哪个部位？'},
+        {q1:'被誉为生命科学登月计划的是什么计划？',q2:'为什么真丝衣服储藏时不能与樟脑丸放在一起？',q3:'《义勇军进行曲》是哪部电影的主题歌？',q4:'四大文明古国是指哪四个国？',q5:'世界上最大的哺乳动物是什么？'},
+        {q1:'当代高科技发展的主要前沿技术有哪些？',q2:'河北唐山发生里氏震级7.6级强烈地震在哪年哪月哪日？',q3:'我国建国以来最强的登陆台风是哪一次？在哪登陆？',q4:'自然界已知的最硬物质是什么？',q5:'我国最早的中医学专著是什么？'},
+        {q1:'我县海水养殖主要贝类有哪些',q2:'中国古代的四大发明是指什么？',q3:'地震按发生成因可分为哪三类？',q4:'生命的物质基础是什么？',q5:'目前衡量地震强度有哪两套标准？'},
+        {q1:'为什么带酸味的水果和食醋能解酒？',q2:'牛奶不宜与何种水果同食？',q3:'我国历史上“代父从军”这个故事的主人公是谁？',q4:'薄公英靠什么传播种子？',q5:'人类最早使用的金属是什么？'},
+        {q1:'海平面为什么不是平的？',q2:'俗语说“狗眼看人低”，那么在狗眼里世界是什么颜色的？',q3:'仙人掌的刺有什么作用？',q4:'为什么勤晒被褥？',q5:'《中华人民共和国科学技术普及法》什么时间开始施行？'},
+        {q1:'苍南县拥有哪些国字号“金名片”？',q2:'实施《全民科学素质行动计划纲要》的方针是什么',q3:'我国古代有“琴棋书画”之说，请问琴指什么？棋指什么？',q4:'“四害”是指什么？',q5:'世界上地势最低的国家是哪个国家？'},
+        {q1:'现代奥林匹克创始人是谁？',q2:'世界上最高的宫殿是什么？',q3:'为什么饭前便后要洗手？',q4:'被称为“杂交水稻之父”的科学家是谁？',q5:'农村土地流转必须遵循什么原则？'},
+        {q1:'我们经常在商品包装上看到的一些黑白间隔的直条，这是什么？',q2:'请问谁发明了第一架飞机？',q3:'声音是怎样产生的？',q4:'洗鱼过后手上有腥味，用什么东西先擦手再用肥皂清洗可以去除腥味？',q5:'为什么海滨的空气特别清新？'},
+        {q1:'出现雷雨天气要具备两个条件是什么？',q2:'禽含哪些羽毛动物？',q3:'生物遗传的物质基础是什么？',q4:'文房四宝指的是哪四件东西？',q5:'我国第一大岛是哪个岛？'},
+        {q1:'吃盐过多对健康有什么影响？',q2:'蓝牙技术是一种什么样技术？',q3:'谁发明了麻醉术？',q4:'2008北京奥运会在哪天开幕？',q5:'万有引力定律是谁发现的？'},
+        {q1:'“知识就是力量”这是英国著名科学家、哲学家谁的名言？',q2:'请问谁发明了造纸术？',q3:'请问“镭的母亲”是指谁？',q4:'我国古代文化中的“五行”是指什么？',q5:'噪声污染是指在多少分贝以上的噪声坏境？'},
+        {q1:'在棉麻、真丝、冰丝、天然彩棉中不属于天然纤维的是哪个？',q2:'苍南县陆地面积有多少平方公里？',q3:'《全民科学素质行动计划纲要》确定的重点人群是有哪四类？',q4:'海水的运动方式有哪三种？',q5:'我国法律规定，未满多少周岁的公民称为未成年人？'},
+        {q1:'沼气池产出什么气体可以燃烧？',q2:'《纺织工业“十一五”发展纲要》提出了关于节能、降耗和减排的哪四项约束性指标？',q3:'属于可再生的清洁的常规能源是什么？',q4:'中国科学技术协会前身是什么？',q5:'《中华人民共和国安全生产法》于哪年哪月哪日起施行？'},
+        {q1:'氧气在空气中含量是多少？',q2:'酗酒有什么害处？',q3:'艾滋病传播途径有哪些？',q4:'香港是在什么时候回归祖国的？',q5:'增加植物叶绿素主要施用什么肥料？'},
+        {q1:'男女的声音为什么有别？',q2:'味精的主要成分是什么？',q3:'产生海水潮汐的主要原因是什么？',q4:'世界上有七大洲、四大洋，最大的大洲和大洋叫什么？',q5:'台风按其结构和带来的天气，可分为哪三部分？'},
+        {q1:'一纳米略等于45个原子排列起来的长度，它是一米的几分之一？',q2:'台风具有突发性强、破坏力大的特点，它的破坏力主要由哪三个因素引起？',q3:'你知道没有书籍的图书馆指的是什么吗？',q4:'海洋中最多的生物是？',q5:'循环经济的第一原则是什么？'},
+        {q1:'我国是什么时候采用公历的？',q2:'母乳喂养对婴儿的生长发育有什么好处？',q3:'端午节赛龙舟、吃粽子是为了纪念我国古代哪一位爱国诗人？',q4:'人体(女人)最大的细胞是什么',q5:'航空与航天的区别是什么？'},
+        {q1:'绿色植物吸收阳光能量、制造氧气的过程叫什么？',q2:'现代染色新技术有哪些？',q3:'第一个将圆周率精确到3.1415926和3.1415927之间的数学家是谁？',q4:'“孑孓”是哪种动物的幼虫？',q5:'为什么饭后不宜马上进行剧烈活动？'},
+        {q1:'“一母生九子，九子各有别。”指的是遗传学中的什么现象？',q2:'植物的根部为什么总是向下生长，主要是受哪个因素影响？',q3:'电脑的“大脑”是什么？',q4:'20世纪中国经历了哪三次巨变？产生了哪三大伟人？ ',q5:'被称为“中国改革开放总设计师”的领导人是哪一位？'},
+        {q1:'怎样预防高血压？',q2:'什么是克隆技术？',q3:'家用纺织面料流行的十大特征是什么？',q4:'6月5日被联合国定为哪个纪念日？',q5:'请列举出4种你知道的消防设施'},
+        {q1:'青蛙是爬行动物吗？属于哪类动物？',q2:'钢主要是由哪两种元素组成的？',q3:'怎样预防感冒？',q4:'科普工作应当坚持哪“三性”？',q5:'出污泥而不染”说的是哪种植物？'},
+        {q1:'我国古典文学四大名著是什么？',q2:'地球上每年发生地震约多少次？',q3:'地球在不停的自转，它自转的方向是怎样的方向？',q4:'共用洗脸毛巾有什么害处？',q5:'第一个飞上太空的宇航员是谁？'},
+        {q1:'正常成人血液总量占体重的比例是多少？',q2:'请问谁发明世界上第一台测定地震的仪器的？',q3:'为什么不能近亲结婚？',q4:'按板块构造学说，地球表层由哪六大板块组成？',q5:'我国的五岳指的是什么山？'},
+        {q1:'绿色食品分级有几种？',q2:'消防工作的方针、原则是什么？',q3:'植物细胞与动物细胞有什么不同？ ',q4:'社会主义新农村建设的“二十字”方针是什么？',q5:'汽车轮胎上的沟纹有哪些作用？'},
+        {q1:'如果一双鞋统一标准是27号，则它的旧码是多少？',q2:'里氏震级几级以上的地震为破坏性地震？',q3:'我国法律规定最低就业年龄为几周岁？',q4:'现代信息处理技术的主体是什么？',q5:'人感冒时为什么要多喝水？'},
+        {q1:'科学技术是第一生产力，是哪位伟人首先提出的？',q2:'“北京时间”指的是哪个时区的时间？',q3:'纺织品抗菌整理剂的抗菌抑菌原理是什么？',q4:'请问谁发明了安全炸药？',q5:'我国最大的内陆咸水湖是哪个湖？'},
+        {q1:'人体最需要哪三种营养？',q2:'我国将地震烈度分为多少度？',q3:'在我国一年四季中，哪一天的白天最短？哪一天白天最长？',q4:'坏血病是因缺什么而造成的？',q5:'人体最坚硬的部分是什么？'},
+        {q1:'发生“日食”的原因是什么？',q2:'我国第一座国家森林公园在哪里？',q3:'为什么太阳光能杀菌？',q4:'为什么不能喝生水？',q5:'世界上第一个进行环球航行的是谁？'},
+        {q1:'为什么不能吃腐败变质食物？',q2:'中国首次参加奥运会比赛的是哪年哪届奥运会？',q3:'太阳系中八大行星有哪些？',q4:'近视眼患者不应该常吃哪类食物？',q5:'亚麻被誉为天然纤维中的什么称号？'},
+        {q1:'剧烈运动后应该喝？',q2:'海鸥为什么总追着轮船飞？',q3:'馒头是谁发明的？',q4:'清朝道光年间，在虎门销禁鸦片的民族英雄是谁？',q5:'植树节是每年的几月几日？'},
+        {q1:'谁是“中国奥运第一人”？ ',q2:'联合国粮农组织确定的人均耕地的警戒线是多少？',q3:'人体缺少哪种元素会造成甲状腺肿大？',q4:'地球自转一周大约要多少时间？',q5:'地球上有四大洋，位于地球最北部的是什么大洋？'},
+        {q1:'中心附近最大风力超过几级或以上的热带气旋称为台风？',q2:'成语“五花八门”最初出自军旅，“五花”、“八门”指的是什么？',q3:'新时期我国科技发展的指导方针是什么？',q4:'请问电灯是谁发明的？',q5:'大米受潮后产生的致癌物质是什么？'},
+        {q1:'在对流层中，高度每上升100 米，温度大约下降多少摄氏度？',q2:'铁锅通常用哪种铁制成？',q3:'白炽灯用久了会发黑的原因是什么？',q4:'中国科学院第一位女院士是谁？',q5:'“科学技术主要是为经济建设服务的”是谁提出的？'}]
+    round2list=[{question:'截止至2018年5月6日.谁是世界首富(答出姓名和其创办的公司)?',answer:'亚马逊CEO杰夫贝索斯'},{question:'暗网和深网的关系是什么?',answer:'暗网是深网的一个子集'},{question:'网游<<终结者>>是哪个公司的产品?',answer:'网易'},{question:'Python之禅的第一句话是什么?',answer:'Beautiful is better than ugly'},
+        {question:'QQ是用哪个编程语言写的?',answer:'C++'},{question:'区块链（Blockchain）是____的一个重要概念?',answer:'比特币'},{question:'知乎大V轮子哥vczh毕业于哪所大学?',answer:'华南理工大学'},
+        {question:'计算机界最高奖项是?',answer:'图灵奖'},{question:'如果C语言有性别,它是男还是女?根据语言性质说一个原因?',answer:'女'},{question:'霍金是哪一天去世的?',answer:'2018年3月14日'},{question:'今年acm全球总决赛冠军队伍来自哪个国家?',answer:'俄罗斯'},
+        {question:'B站CEO是谁?',answer:'陈睿'},{question:'英雄联盟均衡教派有哪几位成员?',answer:'暮光之眼,暗影之拳,狂暴之心'},{question:'人工智能专家吴恩达是国外著名在线教育平台____的联合创始人之一?',answer:'coursera'},
+        {question:'学习编程的过程中,经常看到的关键字“API”其中文意思是?',answer:'应用程序接口'},{question:"开发微信小程序最需要用到的编程语言是?",answer:'javascript'},
+        {question:'发射spaceX的公司的创始人是谁?',answer:'埃隆·马斯克'},{question:'液化石油气的主要成分是什么?',answer:'丙烷和丁烷'},{question:'交流电之父是谁?',answer:'尼古拉·特斯拉'},
+        {question:'闭眼能否解开iphoneX?',answer:'不能'}]
+    round3list=[{question:'在微机中，西文字符所采用的编码是?',answer:'ASCII码'},{question:'一个完整的计算机系统的组成部分的确切提法应该是?',answer:'计算机硬件和软件'},{question:'计算机系统软件中，最基本、最核心的软件是?',answer:'操作系统'},
+        {question:'在Internet上浏览时，浏览器和WWW服务器之间传输网页使用的协议是?',answer:'HTTP'},{question:'计算机网络中传输介质传输速率的单位是bps,其含义是?',answer:'二进制位/秒'},{question:'如果删除一个非零无符号二进制偶整数后的2个O，则此数的值为原数?',answer:'1/4'},
+        {question:'十进制数100转换成无符号二进制整数是?',answer:'01100100'},{question:'编译程序的功能是?',answer:'将源程序编译成目标程序'},{question:'计算机软件系统包括?',answer:'系统软件和应用软件'},{question:'世界上公认的第一台电子计算机诞生的年代是?',answer:'20世纪40年代'}]
+    var b_round1=document.getElementById("bu-round1")
+    b_round1.onclick=function(){
+        var div_round1=document.getElementById("div-round1")
+        div_round1.hidden=null
+        var div_round2=document.getElementById("div-round2")
+        div_round2.hidden="hidden"
+        var div_round3=document.getElementById('div-round3')
+        div_round3.hidden="hidden"
+        var label_round1=document.getElementById("round1_show")
+        var p_round1_list=document.getElementsByClassName('round1_p')
+        var button_round1=document.getElementById("round1_next")
+        label_round1.innerText=grouplist[round1_index]+"'s turn"
+        for(var i=0;i<p_round1_list.length;i+=1){
+            p_round1_list[i].innerHTML=(i+1)+"丶"+round1list[round1_index]['q'+(i+1)]
+        }
+        button_round1.onclick=function(){
+            round1_index+=1
+            if(round1_index==37){
+                for(var i=0;i<p_round1_list.length;i+=1){
+                    p_round1_list[i].hidden="hidden"
+                }
+                label_round1.innerText="The first round has come to an end and click 2-科普news"
+            }
+            else{
+                label_round1.innerText=grouplist[round1_index]+"'s turn"
+                for(var i=0;i<p_round1_list.length;i+=1){
+                    p_round1_list[i].innerHTML=(i+1)+"丶"+round1list[round1_index]['q'+(i+1)]
+                }
+            }
+
+        }
+    }
+    var b_round3=document.getElementById("bu-round3")
+    b_round3.onclick=function(){
+        var div_round1=document.getElementById("div-round1")
+        div_round1.hidden="hidden"
+        var div_round2=document.getElementById("div-round2")
+        div_round2.hidden="hidden"
+        var div_round3=document.getElementById('div-round3')
+        div_round3.hidden=null
+        var label_round3=document.getElementById("round3_numshow")
+        var round3_question=document.getElementById("round3_question")
+        var round3_next=document.getElementById("round3_next")
+        label_round3.innerText=(round3_index+1)+"/10"
+        round3_question.innerHTML=" ·  "+round3list[round3_index].question
+        round3_next.onclick=function(){
+            round3_index+=1
+            if(round3_index>=10){
+                var leftdiv=document.getElementById("left-div")
+                leftdiv.hidden="hidden"
+                var camptionlabel=document.getElementById("camptionlabel")
+                camptionlabel.hidden=null
+                var cname=document.getElementById("name1").innerText
+                camptionlabel.innerText="chamption : "+cname
+            }
+            else{label_round3.innerText=(round3_index+1)+"/10"
+                round3_question.innerHTML=" ·  "+round3list[round3_index].question}
+
+        }
+    }
+
+    var b_round2=document.getElementById("bu-round2")
+    b_round2.onclick=function(){
+        var div_round1=document.getElementById("div-round1")
+        div_round1.hidden="hidden"
+        var div_round3=document.getElementById("div-round3")
+        div_round3.hidden="hidden"
+        var div_round2=document.getElementById("div-round2")
+        div_round2.hidden=null
+        var label_round2=document.getElementById("round2_numshow")
+        var round2_question=document.getElementById("round2_question")
+        var round2_next=document.getElementById("round2_next")
+        label_round2.innerText=((round2_index+1)+"/20")
+        round2_question.innerHTML=" ·  "+round2list[round2_index].question
+        round2_next.onclick=function(){
+            round2_index+=1
+            if(round2_index>=20){
+            round2_question.hidden="hidden"
+                label_round2.innerText="The second round has come to an end and click 3-计算机科普"
+            }
+            else{
+                label_round2.innerText=(round2_index+1)+"/20"
+                round2_question.innerHTML=" ·  "+round2list[round2_index].question
+            }
+
+
+        }
+    }
+
+    var teamnamelist=document.getElementsByClassName('teamname')
+    var teamscorelist=document.getElementsByClassName("teamscore")
+    var team_lable=document.getElementById("team-label")
+    team_lable.onclick=function(){
+        var nameandscorelist=[]
+        for(var i=0;i<teamscorelist.length;i+=1){
+            nameandscorelist.push({name:teamnamelist[i].innerHTML,score:parseInt(teamscorelist[i].innerText)})
+        }
+        nameandscorelist.sort(sortbyscore)
+        for(var i=0;i<teamscorelist.length;i+=1){
+            teamnamelist[i].innerHTML=nameandscorelist[i].name
+            teamscorelist[i].innerText=nameandscorelist[i].score
+        }
+    }
+    function sortbyscore(a,b){
+        return b.score-a.score
+    }
+    //了解js的闭包
+    for(var i=0;i<teamnamelist.length;i+=1){
+        (function(i){
+            //点score加分
+            teamscorelist[i].onclick=function(){
+                teamscorelist[i].innerText=parseInt(teamscorelist[i].innerText)+1
+            }
+            //点名字减分
+            teamnamelist[i].onclick=function(){
+                teamscorelist[i].innerText=parseInt(teamscorelist[i].innerText)-1
+            }
+
+        })(i);
+        teamnamelist[i].innerHTML=grouplist[i]
+    }
+</script>
+</body>
+</html>
